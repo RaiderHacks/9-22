@@ -48,7 +48,7 @@ print(get_joke())
     'id': 25,
     'type': 'programming', 
     'setup': 'How many programmers does it take to change a lightbulb?',
-    'punchline':	 "None that's a hardware problem"
+    'punchline': "None that's a hardware problem"
 }
 ```
 
