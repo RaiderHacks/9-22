@@ -43,11 +43,12 @@ print(get_joke())
 
 
 
-```JSON
-{'id': 25,
-'type': 'programming', 
-'setup': 'How many programmers does it take to change a lightbulb?',
-'punchline':	 "None that's a hardware problem"
+```javascript
+{
+    'id': 25,
+    'type': 'programming', 
+    'setup': 'How many programmers does it take to change a lightbulb?',
+    'punchline': "None that's a hardware problem"
 }
 ```
 
