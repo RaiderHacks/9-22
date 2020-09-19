@@ -43,11 +43,20 @@ print(get_joke())
 
 
 
+<<<<<<< HEAD
 ```JSON
 {'id': 25,
 'type': 'programming', 
 'setup': 'How many programmers does it take to change a lightbulb?',
 'punchline':	 "None that's a hardware problem"
+=======
+```json
+{
+    'id': 25,
+    'type': 'programming', 
+    'setup': 'How many programmers does it take to change a lightbulb?',
+    'punchline': "None that's a hardware problem"
+>>>>>>> 1af019afb77a405314a34d90c4b40da606535cf3
 }
 ```
 
