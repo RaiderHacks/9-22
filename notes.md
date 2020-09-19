@@ -54,11 +54,3 @@ print(get_joke())
 
 
 
-
-
-1. https://discordpy.readthedocs.io/en/latest/discord.html
-
-1. https://discord.com/developers/applications
-   1. New application 
-   2. Name it "jokes bot "
-   3. 
