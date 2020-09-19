@@ -43,7 +43,7 @@ print(get_joke())
 
 
 
-```json
+```JSON
 {'id': 25,
 'type': 'programming', 
 'setup': 'How many programmers does it take to change a lightbulb?',
