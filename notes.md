@@ -44,10 +44,11 @@ print(get_joke())
 
 
 ```json
-{'id': 25,
-'type': 'programming', 
-'setup': 'How many programmers does it take to change a lightbulb?',
-'punchline':	 "None that's a hardware problem"
+{
+    'id': 25,
+    'type': 'programming', 
+    'setup': 'How many programmers does it take to change a lightbulb?',
+    'punchline':	 "None that's a hardware problem"
 }
 ```
 
