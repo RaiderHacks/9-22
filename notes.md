@@ -1,6 +1,8 @@
-## Make a new Repl evironment
+# Part 1: calling the jokes API
 
-### Go to https://repl.it/
+### Make a new 
+
+ environment, Go to https://repl.it/
 
 <img src="notes.assets/image-20200919180927141.png" alt="image-20200919180927141" style="zoom: 33%;" />
 
@@ -54,7 +56,7 @@ print(get_joke())
 
 
 
-# Setting up a Discord server
+# Part2: Setting up a Discord server & Bot 
 
 ### Make your own discord server
 
@@ -95,4 +97,63 @@ print(get_joke())
 ### Select the server we set up earlier & click `Authorize` on the next window
 
 <img src="notes.assets/image-20200921182849404.png" alt="image-20200921182849404" style="zoom:50%;" />
+
+# Part 3: Interacting with your bot
+
+### Go back to your [Repl environment](https://repl.it/) and install the discord and requests modules
+
+```
+pip install discord
+pip install requests
+```
+
+ ### Create a new python file named `bot.py`
+
+`touch bot.py`
+
+### Now paste this code into `bot.py`
+
+##### On line 19 of the previous snippet notice `client.run('your_bot_token')	`
+
+```python
+import discord
+
+client = discord.Client()
+
+
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
+
+client.run('your_bot_token')	
+```
+
+
+
+### Navigate back to https://discord.com/developers/applications `Settings > Bot > Build-A-Bot` and select copy under `TOKEN`
+
+![image-20200921190834160](notes.assets/image-20200921190834160.png)
+
+### Navigate back to https://repl.it and replace the string on line 19 with your token
+
+**It will look something like this**
+
+<img src="notes.assets/image-20200921191010817.png" alt="image-20200921191010817" style="zoom:50%;" />
+
+#### In your console run `python bot.py`. Don't exit this
+
+<img src="notes.assets/image-20200921191230050.png" alt="image-20200921191230050" style="zoom:50%;" />
+
+#### In your discord server type `$hello` to interact with your bot
+
+<img src="notes.assets/image-20200921191456487.png" alt="image-20200921191456487" style="zoom:50%;" />
 
